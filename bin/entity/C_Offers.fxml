@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+	minWidth="-Infinity" prefHeight="650.0" prefWidth="1015.0"
+	xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="boundary.C_OffersController">
+	<columnConstraints>
+		<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"
+			prefWidth="100.0" />
+		<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"
+			prefWidth="100.0" />
+	</columnConstraints>
+	<rowConstraints>
+		<RowConstraints minHeight="10.0" prefHeight="30.0"
+			vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="30.0"
+			vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="30.0"
+			vgrow="SOMETIMES" />
+	</rowConstraints>
+	<children>
+		<Pane>
+			<children>
+				<ToggleButton fx:id="btn0" layoutX="72.0" layoutY="27.0"
+					mnemonicParsing="false" onMouseClicked="#monthMouseClicked"
+					onMouseEntered="#monthMouseEntered" onMouseExited="#monthMouseExited"
+					prefHeight="42.0" prefWidth="92.0" text="Month" />
+				<ToggleButton fx:id="btn1" layoutX="72.0" layoutY="77.0"
+					mnemonicParsing="false" onMouseClicked="#monthMouseClicked"
+					onMouseEntered="#monthMouseEntered" onMouseExited="#monthMouseExited"
+					prefHeight="42.0" prefWidth="92.0" text="Month" />
+				<ToggleButton fx:id="btn2" layoutX="72.0" layoutY="131.0"
+					mnemonicParsing="false" onMouseClicked="#monthMouseClicked"
+					onMouseEntered="#monthMouseEntered" onMouseExited="#monthMouseExited"
+					prefHeight="42.0" prefWidth="92.0" text="Month" />
+				<ToggleButton fx:id="btn3" layoutX="196.0" layoutY="48.0"
+					mnemonicParsing="false" onMouseClicked="#monthMouseClicked"
+					onMouseEntered="#monthMouseEntered" onMouseExited="#monthMouseExited"
+					prefHeight="42.0" prefWidth="92.0" text="Month" />
+				<ToggleButton fx:id="btn4" layoutX="196.0" layoutY="110.0"
+					mnemonicParsing="false" onMouseClicked="#monthMouseClicked"
+					onMouseEntered="#monthMouseEntered" onMouseExited="#monthMouseExited"
+					prefHeight="42.0" prefWidth="92.0" text="Month" />
+			</children>
+		</Pane>
+		<Pane GridPane.rowIndex="1">
+			<children>
+				<Button fx:id="btnGO" layoutX="169.0" layoutY="71.0"
+					mnemonicParsing="false" text="GO!" />
+			</children>
+		</Pane>
+		<Pane GridPane.columnIndex="1">
+			<children>
+				<ToggleButton fx:id="nbtn0" layoutX="14.0" layoutY="34.0"
+					mnemonicParsing="false" onMouseClicked="#nightsMouseClicked"
+					onMouseEntered="#nightsMouseEntered" onMouseExited="#nightsMouseExited"
+					prefHeight="30.0" prefWidth="90.0" text="2-5 Nights" />
+				<ToggleButton fx:id="nbtn1" layoutX="14.0" layoutY="77.0"
+					mnemonicParsing="false" onMouseClicked="#nightsMouseClicked"
+					onMouseEntered="#nightsMouseEntered" onMouseExited="#nightsMouseExited"
+					prefHeight="30.0" prefWidth="90.0" text="6-8 Nights" />
+				<ToggleButton fx:id="nbtn2" layoutX="14.0" layoutY="122.0"
+					mnemonicParsing="false" onMouseClicked="#nightsMouseClicked"
+					onMouseEntered="#nightsMouseEntered" onMouseExited="#nightsMouseExited"
+					prefHeight="30.0" prefWidth="90.0" text="9-11 Nights" />
+				<ToggleButton fx:id="nbtn3" layoutX="14.0" layoutY="163.0"
+					mnemonicParsing="false" onMouseClicked="#nightsMouseClicked"
+					onMouseEntered="#nightsMouseEntered" onMouseExited="#nightsMouseExited"
+					prefHeight="30.0" prefWidth="90.0" text="12+ Nights" />
+			</children>
+		</Pane>
+	</children>
+</GridPane>

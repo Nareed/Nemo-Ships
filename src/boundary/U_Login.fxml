@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boundary.U_LoginController">
+   <top>
+      <HBox fx:id="titleBar" alignment="CENTER_RIGHT" fillHeight="false" prefHeight="16.0" prefWidth="1280.0" style="-fx-background-color: #265573;" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <Button fx:id="btnMinus" alignment="CENTER" blendMode="SRC_ATOP" graphicTextGap="22.0" mnemonicParsing="false" style="-fx-background-color: #265573;" textAlignment="CENTER" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="16.0" fitWidth="16.0" focusTraversable="true" pickOnBounds="true" smooth="false">
+                     <image>
+                        <Image url="@../Media/remove_white_54x54.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnExit" alignment="CENTER" graphicTextGap="22.0" layoutX="1234.0" layoutY="10.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#handleExit" style="-fx-background-color: #265573;" textAlignment="CENTER" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="16.0" fitWidth="16.0" focusTraversable="true" smooth="false">
+                     <image>
+                        <Image url="@../Media/clear_white_54x54.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding>
+      </HBox>
+   </top>
+   <center>
+      <AnchorPane fx:id="ap_Video" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <MediaView fx:id="mv_video" fitHeight="763.0" fitWidth="1280.0" />
+            <VBox alignment="TOP_CENTER" fillWidth="false" prefHeight="800.0" prefWidth="265.0" spacing="20.0" style="-fx-background-color: #1A394C;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="650.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="323.0" fitWidth="241.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Media/LOGO.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="60.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <HBox alignment="CENTER" style="-fx-border-color: white; -fx-border-radius: 30;">
+                     <children>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@../Media/mail_outline_white_54x54.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <TextField fx:id="emailtxt" onKeyReleased="#onKeyReleased" prefHeight="40.0" prefWidth="200.0" promptText="Please Enter Your Email Address" style="-fx-background-color: transparent;" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" style="-fx-border-color: white; -fx-border-radius: 30;">
+                     <children>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@../Media/lock_white_54x54.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <PasswordField fx:id="pswrdtxt" onKeyReleased="#onKeyReleased" prefHeight="40.0" prefWidth="200.0" promptText="Please Enter Your Password" style="-fx-background-color: transparent;" />
+                     </children>
+                  </HBox>
+                  <Button fx:id="loginbtn" mnemonicParsing="false" onAction="#loginOnAction" onMouseEntered="#buttOnMouseEntered" onMouseExited="#buttOnMouseExited" prefHeight="56.0" prefWidth="256.0" style="-fx-background-radius: 50; -fx-background-color: white;" text="Login" />
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account ? " />
+                        <Hyperlink fx:id="signuphere" onAction="#handleLink" text="Sign up here!" underline="true" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

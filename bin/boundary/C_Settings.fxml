@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="763.0" prefWidth="1015.0" style="-fx-background-color: #4BB3A9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boundary.C_SettingsController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="684.7140045166016" minHeight="10.0" prefHeight="330.46051025390625" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="684.7140045166016" minHeight="10.0" prefHeight="322.62896728515625" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="684.7140045166016" minHeight="10.0" prefHeight="110.37103271484375" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <BorderPane fx:id="bp11" prefHeight="446.0" prefWidth="478.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <top>
+            <Text fill="#1a394c" strokeType="OUTSIDE" strokeWidth="0.0" text="Personal Info" textAlignment="CENTER" wrappingWidth="469.1369323730469" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets top="30.0" />
+               </BorderPane.margin>
+            </Text>
+         </top>
+         <GridPane.margin>
+            <Insets bottom="10.0" left="20.0" right="10.0" top="20.0" />
+         </GridPane.margin>
+         <center>
+            <GridPane alignment="CENTER" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                     <children>
+                        <Text fx:id="t_personID" fill="#4bb3a9" nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="personID" textAlignment="CENTER" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <Text fx:id="t_firstName" fill="#4bb3a9" nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="firstName" textAlignment="CENTER" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <Text fx:id="t_surName" fill="#4bb3a9" nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="surName" textAlignment="CENTER" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <children>
+                        <Text fx:id="t_dateOfBirth" fill="#4bb3a9" nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="dateOfBirth" textAlignment="CENTER" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <children>
+                        <Text fx:id="t_phone" fill="#4bb3a9" nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="phone" textAlignment="CENTER" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <children>
+                        <Text fx:id="t_email" fill="#4bb3a9" nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="email" textAlignment="CENTER" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </HBox>
+                  <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Text fx:id="t_personID1" fill="#1a394c" nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="personID" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <GridPane.margin>
+                        <Insets right="5.0" />
+                     </GridPane.margin>
+                  </HBox>
+                  <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                     <children>
+                        <Text fx:id="t_firstName1" fill="#1a394c" nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="firstName" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <GridPane.margin>
+                        <Insets right="5.0" />
+                     </GridPane.margin>
+                  </HBox>
+                  <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+                     <children>
+                        <Text fx:id="t_surName1" fill="#1a394c" nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="surName" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <GridPane.margin>
+                        <Insets right="5.0" />
+                     </GridPane.margin>
+                  </HBox>
+                  <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="3">
+                     <children>
+                        <Text fx:id="t_dateOfBirth1" fill="#1a394c" nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="dateOfBirth" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <GridPane.margin>
+                        <Insets right="5.0" />
+                     </GridPane.margin>
+                  </HBox>
+                  <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="4">
+                     <children>
+                        <Text fx:id="t_phone1" fill="#1a394c" nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="phone" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <GridPane.margin>
+                        <Insets right="5.0" />
+                     </GridPane.margin>
+                  </HBox>
+                  <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="5">
+                     <children>
+                        <Text fx:id="t_email1" fill="#1a394c" nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="email" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <GridPane.margin>
+                        <Insets right="5.0" />
+                     </GridPane.margin>
+                  </HBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="20.0" left="80.0" right="80.0" top="10.0" />
+               </BorderPane.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </GridPane>
+         </center>
+      </BorderPane>
+      <BorderPane fx:id="bp1" prefHeight="277.0" prefWidth="477.0" style="-fx-background-color: white; -fx-background-radius: 30;" GridPane.columnIndex="1">
+         <effect>
+            <DropShadow />
+         </effect>
+         <GridPane.margin>
+            <Insets bottom="10.0" left="10.0" right="20.0" top="20.0" />
+         </GridPane.margin>
+         <top>
+            <Text fill="#1a394c" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Password" textAlignment="CENTER" wrappingWidth="469.1369323730469" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets top="30.0" />
+               </BorderPane.margin>
+            </Text>
+         </top>
+         <center>
+            <VBox BorderPane.alignment="CENTER">
+               <children>
+                  <PasswordField fx:id="tf_old_password" prefHeight="30.0" promptText="Old Password">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="60.0" right="60.0" />
+                     </VBox.margin>
+                  </PasswordField>
+                  <PasswordField fx:id="tf_new_password" prefHeight="30.0" promptText="New Password">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="60.0" right="60.0" />
+                     </VBox.margin>
+                  </PasswordField>
+                  <PasswordField fx:id="tf_confirm_password" prefHeight="30.0" promptText="Confirm Password">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="60.0" right="60.0" />
+                     </VBox.margin>
+                  </PasswordField>
+                  <HBox alignment="TOP_CENTER" prefWidth="267.0">
+                     <children>
+                        <Button fx:id="btn_reset_password" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" style="-fx-background-color: white;" text="Reset" textFill="#1a394c">
+                           <HBox.margin>
+                              <Insets right="15.0" />
+                           </HBox.margin>
+                           <effect>
+                              <DropShadow color="#1a394c" />
+                           </effect>
+                        </Button>
+                        <Button fx:id="btn_save_password" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" style="-fx-background-color: #1A394C;" styleClass="btnGreen" text="Save" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <effect>
+                              <DropShadow blurType="ONE_PASS_BOX" color="WHITE" />
+                           </effect>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="60.0" right="60.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="20.0" left="40.0" right="40.0" top="10.0" />
+               </BorderPane.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+         </center>
+      </BorderPane>
+      <BorderPane fx:id="bp_udpate_email_or_phone" layoutX="528.0" layoutY="218.0" prefHeight="302.0" prefWidth="704.0" style="-fx-background-color: white; -fx-background-radius: 30;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <effect>
+            <DropShadow />
+         </effect>
+         <top>
+            <Text fill="#1a394c" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Email / Phone" textAlignment="CENTER" wrappingWidth="469.1369323730469" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets top="30.0" />
+               </BorderPane.margin>
+            </Text>
+         </top>
+         <center>
+            <VBox prefHeight="321.0" prefWidth="341.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox nodeOrientation="LEFT_TO_RIGHT" prefWidth="353.0" spacing="20.0">
+                     <children>
+                        <RadioButton fx:id="rd_phone" contentDisplay="CENTER" mnemonicParsing="false" text="Phone" textFill="#1a394c" />
+                        <RadioButton fx:id="rd_email" alignment="CENTER_RIGHT" contentDisplay="CENTER" mnemonicParsing="false" text="Email" textFill="#1a394c" />
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="20.0" left="130.0" />
+                     </padding>
+                  </HBox>
+                  <TextField fx:id="tf_email" disable="true" prefHeight="30.0" prefWidth="245.0" promptText="Email">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="60.0" right="60.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="tf_phone" disable="true" prefHeight="30.0" prefWidth="245.0" promptText="Phone">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="60.0" right="60.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <HBox alignment="TOP_CENTER" prefWidth="267.0">
+                     <children>
+                        <Button fx:id="btn_reset_email_phone" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" style="-fx-background-color: white;" text="Reset" textFill="#1a394c">
+                           <HBox.margin>
+                              <Insets right="15.0" />
+                           </HBox.margin>
+                           <effect>
+                              <DropShadow color="#1a394c" />
+                           </effect>
+                        </Button>
+                        <Button fx:id="btn_save_phone_email" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" style="-fx-background-color: #1A394C;" styleClass="btnGreen" text="Save" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <effect>
+                              <DropShadow blurType="ONE_PASS_BOX" color="WHITE" />
+                           </effect>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="60.0" right="60.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="20.0" left="40.0" right="40.0" top="10.0" />
+               </BorderPane.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+         </center>
+         <GridPane.margin>
+            <Insets bottom="10.0" left="10.0" right="20.0" top="10.0" />
+         </GridPane.margin>
+      </BorderPane>
+      <BorderPane GridPane.rowIndex="1" />
+   </children>
+</GridPane>

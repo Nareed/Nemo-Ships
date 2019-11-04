@@ -1,0 +1,16 @@
+
+
+.default-color0.chart-bar { -fx-bar-fill: #1a394c; }
+.default-color1.chart-bar { -fx-bar-fill: #47606f; }
+.default-color2.chart-bar { -fx-bar-fill: #758893; }
+.default-color3.chart-bar { -fx-bar-fill: #a3afb7; }
+.default-color4.chart-bar { -fx-bar-fill: #d1d7db; }
+.default-color5.chart-bar { -fx-bar-fill: #352C25; }
+
+
+.default-color0.chart-series-line { -fx-stroke: #1a394c; }
+.default-color1.chart-series-line { -fx-stroke: #47606f; }
+.default-color2.chart-series-line { -fx-stroke: #758893; }
+.default-color3.chart-series-line { -fx-stroke: #a3afb7; }
+.default-color4.chart-series-line { -fx-stroke: #d1d7db; }
+.default-color5.chart-series-line { -fx-stroke: #352C25; }

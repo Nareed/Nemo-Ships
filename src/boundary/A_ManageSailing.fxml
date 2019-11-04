@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<ScrollPane xmlns="http://javafx.com/javafx/8.0.171"
+	xmlns:fx="http://javafx.com/fxml/1" fx:controller="boundary.A_ManageSailingController">
+	<content>
+		<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity"
+			minHeight="-Infinity" minWidth="-Infinity" prefHeight="734.0"
+			prefWidth="1015.0" style="-fx-background-color: #4BB3A9;">
+			<children>
+				<Label layoutX="23.0" layoutY="26.0" text="Sailings in Database">
+					<font>
+						<Font size="36.0" />
+					</font>
+				</Label>
+				<Label layoutX="77.0" layoutY="136.0" text="CruiseID">
+					<font>
+						<Font size="18.0" />
+					</font>
+				</Label>
+				<ComboBox fx:id="comboSailingID" layoutX="81.0" layoutY="171.0"
+					prefHeight="25.0" prefWidth="129.0" />
+				<Label layoutX="231.0" layoutY="136.0" text="Leaving Date">
+					<font>
+						<Font size="18.0" />
+					</font>
+				</Label>
+				<Label layoutX="397.0" layoutY="136.0" text="Return Date">
+					<font>
+						<Font size="18.0" />
+					</font>
+				</Label>
+				<Label layoutX="563.0" layoutY="136.0" text="Ship ID">
+					<font>
+						<Font size="18.0" />
+					</font>
+				</Label>
+				<DatePicker fx:id="txtleaving" layoutX="231.0" layoutY="171.0"
+					prefHeight="25.0" prefWidth="149.0" />
+				<DatePicker fx:id="txtreturn" layoutX="397.0" layoutY="171.0"
+					prefHeight="25.0" prefWidth="149.0" />
+				<ScrollPane layoutX="85.0" layoutY="472.0">
+					<content>
+						<TableView fx:id="tblSailTo" prefHeight="225.0"
+							prefWidth="667.0">
+							<columns>
+								<TableColumn fx:id="tcCountry" prefWidth="75.0"
+									text="Country" />
+								<TableColumn fx:id="tcPort" prefWidth="75.0" text="Port" />
+								<TableColumn fx:id="tcArrival" prefWidth="93.0"
+									text="Arrival" />
+								<TableColumn fx:id="tcLeaving" prefWidth="102.0"
+									text="Leaving" />
+							</columns>
+						</TableView>
+					</content>
+				</ScrollPane>
+				<Button fx:id="btnEdit" layoutX="185.0" layoutY="99.0"
+					mnemonicParsing="false" onMouseClicked="#handleEditClick"
+					prefHeight="37.0" prefWidth="58.0" text="Edit">
+					<font>
+						<Font size="16.0" />
+					</font>
+				</Button>
+				<Button fx:id="btnReset" layoutX="258.0" layoutY="99.0"
+					mnemonicParsing="false" onMouseClicked="#handleResetClick"
+					prefHeight="37.0" prefWidth="67.0" text="Reset">
+					<font>
+						<Font size="16.0" />
+					</font>
+				</Button>
+				<Button fx:id="btnSave" layoutX="345.0" layoutY="99.0"
+					mnemonicParsing="false" onMouseClicked="#handleSaveClick"
+					prefHeight="37.0" prefWidth="67.0" text="Save">
+					<font>
+						<Font size="16.0" />
+					</font>
+				</Button>
+				<Button fx:id="btnBackToView" layoutX="447.0" layoutY="99.0"
+					mnemonicParsing="false" onMouseClicked="#handleBackViewClick"
+					prefHeight="37.0" prefWidth="121.0" text="Back to View">
+					<font>
+						<Font size="16.0" />
+					</font>
+				</Button>
+				<ComboBox fx:id="comboShipID" layoutX="563.0" layoutY="171.0"
+					prefWidth="150.0" />
+				<ScrollPane layoutX="85.0" layoutY="219.0">
+					<content>
+						<TableView fx:id="tblSailing" prefHeight="200.0"
+							prefWidth="667.0">
+							<columns>
+								<TableColumn fx:id="tcCruiseID" prefWidth="103.0"
+									text="CruiseID" />
+								<TableColumn fx:id="tcShipID" prefWidth="82.0" text="ShipID" />
+								<TableColumn fx:id="tcCruiseLeave" prefWidth="165.3333740234375"
+									text="Leaving DateTime" />
+								<TableColumn fx:id="tcCruiseReturn" prefWidth="192.33331298828125"
+									text="Return Date" />
+							</columns>
+						</TableView>
+					</content>
+				</ScrollPane>
+			</children>
+		</AnchorPane>
+	</content>
+</ScrollPane>

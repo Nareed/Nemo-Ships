@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handleOnMouseClicked" prefHeight="341.0" prefWidth="320.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boundary.C_OfferObjectController">
+	<children>
+      <AnchorPane focusTraversable="true" layoutY="-1.0" prefHeight="341.0" prefWidth="320.0">
+         <children>
+      		<ImageView fx:id="OfferImage" fitHeight="180.0" fitWidth="319.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor></ImageView>
+      		<Label fx:id="lbllast" layoutX="16.0" layoutY="15.0" prefHeight="27.0" prefWidth="104.0" style="-fx-background-color: RED; -fx-background-radius: 20;" text="LAST _ PLACES" textFill="WHITE">
+      			<padding>
+      				<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      			</padding>
+      			<font>
+      				<Font name="Calibri Bold" size="14.0" />
+      			</font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+      		</Label>
+      		<Text fx:id="txtnights" fill="#4bb3a9" layoutX="11.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3 Nights">
+      			<font>
+      				<Font name="System Bold" size="28.0" />
+      			</font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+      		</Text>
+      		<Text fx:id="txtshipname" fill="#1a394c" layoutX="11.0" layoutY="234.5771484375" strokeType="OUTSIDE" strokeWidth="0.0" text="ship name">
+      			<font>
+      				<Font name="Franklin Gothic Medium Cond" size="22.0" />
+      			</font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+      		</Text>
+      		<Text fx:id="txtdeparture" fill="#1a394c" layoutX="11.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Departs from country name">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor></Text>
+      		<Text fx:id="txtport" fill="#1a394c" layoutX="11.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="port name">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor></Text>
+      		<Text fill="#1a394c" layoutX="233.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Starting From">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+      		</Text>
+      		<Text fx:id="txtfrom" fill="#1a394c" layoutX="222.0" layoutY="311.853515625" strokeMiterLimit="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="320$" textAlignment="CENTER">
+               <font>
+                  <Font name="Franklin Gothic Heavy" size="36.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+      		</Text>
+      		<Text fill="#1a394c" layoutX="228.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price Per Room">
+      			<font>
+      				<Font size="10.0" />
+      			</font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+      		</Text>
+            <Text fx:id="txtid" layoutX="252.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </AnchorPane>
+	</children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</Pane>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane fx:id="scrollPane" prefHeight="2000.0" prefWidth="1015.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boundary.A_DashboardController">
+   <content>
+      <VBox fx:id="vbox" alignment="CENTER" fillWidth="false" prefHeight="2005.0" prefWidth="1022.0" spacing="30.0" style="-fx-background-color: #4BB3A9;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="200.0" prefWidth="900.0" spacing="30.0">
+               <children>
+                  <BorderPane fx:id="bpUsers" onMouseEntered="#glow" onMouseExited="#clearGlow" prefHeight="400.0" prefWidth="380.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+                     <center>
+                        <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+                           <children>
+                              <Text fx:id="txtTotalUsers" fill="#1a394c" strokeType="OUTSIDE" strokeWidth="0.0" text="1,432">
+                                 <font>
+                                    <Font name="Franklin Gothic Medium Cond" size="50.0" />
+                                 </font>
+                                 <effect>
+                                    <Glow />
+                                 </effect>
+                              </Text>
+                              <Text fill="#4bb3a9" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Users">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                     </center>
+                     <HBox.margin>
+                        <Insets top="40.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bpOrders" onMouseEntered="#glow" onMouseExited="#clearGlow" prefHeight="400.0" prefWidth="380.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+                     <center>
+                        <VBox alignment="CENTER" prefHeight="151.0" prefWidth="208.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Text fx:id="txtTotalOrders" fill="#1a394c" strokeType="OUTSIDE" strokeWidth="0.0" text="4,123">
+                                 <font>
+                                    <Font name="Franklin Gothic Medium Cond" size="50.0" />
+                                 </font>
+                                 <effect>
+                                    <Glow />
+                                 </effect>
+                              </Text>
+                              <Text fill="#4bb3a9" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Orders">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                     </center>
+                     <HBox.margin>
+                        <Insets top="40.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bpProfit" onMouseEntered="#glow" onMouseExited="#clearGlow" prefHeight="400.0" prefWidth="380.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+                     <center>
+                        <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+                           <children>
+                              <Text fx:id="txtTotalProfit" fill="#1a394c" strokeType="OUTSIDE" strokeWidth="0.0" text="7,834" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Franklin Gothic Medium Cond" size="50.0" />
+                                 </font>
+                                 <effect>
+                                    <Glow />
+                                 </effect>
+                              </Text>
+                              <Text fill="#4bb3a9" pickOnBounds="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Profit" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                     </center>
+                     <HBox.margin>
+                        <Insets top="40.0" />
+                     </HBox.margin>
+                  </BorderPane>
+               </children>
+            </HBox>
+            <BorderPane fx:id="bplandscape1" onMouseEntered="#glow" onMouseExited="#clearGlow" prefHeight="373.0" prefWidth="900.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+               </padding>
+            </BorderPane>
+            <HBox alignment="CENTER" prefHeight="400.0" prefWidth="900.0" spacing="30.0">
+               <children>
+                  <BorderPane fx:id="bplandscape3" onMouseEntered="#glow" onMouseExited="#clearGlow" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+                     <padding>
+                        <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+                     </padding>
+                  </BorderPane>
+                  <BorderPane fx:id="bplandscape2" onMouseEntered="#glow" onMouseExited="#clearGlow" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+                     <padding>
+                        <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+                     </padding>
+                  </BorderPane>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="68.0" layoutY="623.0" prefHeight="400.0" prefWidth="900.0" spacing="30.0">
+               <children>
+                  <BorderPane fx:id="bplandscape4" onMouseEntered="#glow" onMouseExited="#clearGlow" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+                     <padding>
+                        <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+                     </padding>
+                  </BorderPane>
+                  <BorderPane fx:id="bplandscape5" onMouseEntered="#glow" onMouseExited="#clearGlow" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+                     <padding>
+                        <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+                     </padding>
+                  </BorderPane>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="68.0" layoutY="1073.0" prefHeight="400.0" prefWidth="900.0" spacing="30.0">
+               <children>
+                  <BorderPane fx:id="bplandscape6" onMouseEntered="#glow" onMouseExited="#clearGlow" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+                     <padding>
+                        <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+                     </padding>
+                  </BorderPane>
+                  <BorderPane fx:id="bplandscape7" onMouseEntered="#glow" onMouseExited="#clearGlow" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+                     <padding>
+                        <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+                     </padding>
+                  </BorderPane>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="100.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>

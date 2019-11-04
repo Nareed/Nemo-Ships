@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<ScrollPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boundary.A_AddingShipRoomController">
+   <content>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="734.0" prefWidth="1015.0" style="-fx-background-color: #4BB3A9;">
+      	<children>
+            <BorderPane fx:id="bp111" layoutX="529.0" layoutY="22.0" prefHeight="628.0" prefWidth="400.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </BorderPane>
+            <VBox layoutX="72.0" layoutY="120.0" />
+            <VBox layoutX="239.0" layoutY="223.0" />
+      		<ScrollPane layoutX="572.0" layoutY="130.0" prefHeight="477.0" prefWidth="308.0">
+      			<content>
+      				<TableView fx:id="roomstbl" prefHeight="491.0" prefWidth="308.0" />
+      			</content>
+      		</ScrollPane>
+            <BorderPane fx:id="bp11" layoutX="24.0" layoutY="18.0" prefHeight="630.0" prefWidth="482.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <top>
+                  <Text fill="#1a394c" strokeType="OUTSIDE" strokeWidth="0.0" text="Criuse Order" textAlignment="CENTER" wrappingWidth="469.1369323730469" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                     <BorderPane.margin>
+                        <Insets top="30.0" />
+                     </BorderPane.margin>
+                  </Text>
+               </top>
+               <center>
+                  <HBox alignment="CENTER" prefHeight="472.0" prefWidth="427.0" spacing="20.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox alignment="CENTER" spacing="20.0">
+                           <children>
+                              <Label text="Ship ID" textFill="#4bb3a9">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Ship Name" textFill="#4bb3a9">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Manufacturing Date" textFill="#4bb3a9">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Max Capacity" textFill="#4bb3a9">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Max Num of People" textFill="#4bb3a9">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                 </VBox.margin>
+                              </Label>
+                        		<Button fx:id="btnSave" minHeight="50.0" mnemonicParsing="false" onMouseClicked="#handleSaveClick" prefWidth="150.0" style="-fx-background-color: #1a394c; -fx-background-radius: 30;" text="Save" textFill="WHITE">
+                        			<font>
+                        				<Font name="System Bold" size="16.0" />
+                        			</font>
+                        		</Button>
+                        		<Button fx:id="btnAdd" minHeight="50.0" mnemonicParsing="false" onMouseClicked="#handleAddClick" prefWidth="150.0" style="-fx-background-color: #1a394c; -fx-background-radius: 30;" text="Add New" textFill="WHITE">
+                        			<font>
+                        				<Font name="System Bold" size="16.0" />
+                        			</font>
+                        		</Button>
+                        		<Button fx:id="btnBackToView" minHeight="50.0" mnemonicParsing="false" onMouseClicked="#handleBackToViewClick" prefWidth="150.0" style="-fx-background-color: #1a394c; -fx-background-radius: 30;" text="Back to view" textFill="WHITE">
+                        			<font>
+                        				<Font name="System Bold" size="16.0" />
+                        			</font>
+                        		</Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" spacing="21.0">
+                           <children>
+                              <TextField fx:id="txtShipID" minHeight="35.0" style="-fx-background-radius: 30;" />
+                              <TextField fx:id="txtShipName" minHeight="35.0" style="-fx-background-radius: 30;" />
+                              <DatePicker fx:id="txtManDate" minHeight="35.0" style="-fx-background-radius: 30;" />
+                              <TextField fx:id="txtMaxCap" minHeight="35.0" style="-fx-background-radius: 30;" />
+                              <TextField fx:id="txtNumPpl" minHeight="35.0" style="-fx-background-radius: 30;" />
+                        		<Button fx:id="btnEdit" minHeight="50.0" mnemonicParsing="false" onMouseClicked="#handleEditClick" prefWidth="150.0" style="-fx-background-color: #1a394c; -fx-background-radius: 30;" text="Edit" textFill="WHITE">
+                        			<font>
+                        				<Font name="System Bold" size="16.0" />
+                        			</font>
+                        		</Button>
+                        		<Button fx:id="btnReset" minHeight="50.0" mnemonicParsing="false" onMouseClicked="#handleResetClick" prefWidth="150.0" style="-fx-background-color: #1a394c; -fx-background-radius: 30;" text="Reset" textFill="WHITE">
+                        			<font>
+                        				<Font name="System Bold" size="16.0" />
+                        			</font>
+                        		</Button>
+                        		<Button fx:id="btnDelete" minHeight="50.0" mnemonicParsing="false" onMouseClicked="#handleDeleteClick" prefWidth="150.0" style="-fx-background-color: #1a394c; -fx-background-radius: 30;" text="Delete" textFill="WHITE">
+                        			<font>
+                        				<Font name="System Bold" size="16.0" />
+                        			</font>
+                        		</Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </center>
+            </BorderPane>
+      		<ComboBox fx:id="ComboShipID" layoutX="266.0" layoutY="145.0" prefHeight="35.0" prefWidth="174.0" style="-fx-background-radius: 30; -fx-background-color: white;" />
+            <Text fill="#1a394c" layoutX="492.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rooms" textAlignment="CENTER" wrappingWidth="469.1369323730469">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+            </Text>
+      	</children>
+      </AnchorPane>
+   </content>
+</ScrollPane>
